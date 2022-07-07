@@ -1,0 +1,77 @@
+html, body {
+    background: #25326C;
+}
+
+.login-logo {
+    padding: 2em;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #3F67B1;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.login-form h1 {
+    padding-bottom: 0.5em;
+    color: #FFF200;
+}
+
+.btn {
+    background-color: #FF00AC;
+    color: #ffff;
+    font-weight: bold;
+    border:none;
+    outline: none !important;
+}
+
+.btn:hover {
+    background-color: #FFF200;
+    color: #FF00AC;
+    border:none;
+    outline: none !important;
+}
+
+.btn:active {
+    background-color: #FFF200! important;
+    color: #FF00AC;
+    border:none;
+    outline: none !important;
+}
+
+.login-links {
+    padding: 1em;
+    font-size: .67em;
+    color: #FFF200;
+}
+
+.login-links a:link {
+    color: #FFF200;
+}
+
+.login-links a:visited {
+    color: #FFF200;
+}
+
+.login-links a:hover {
+    color: #FFF200;
+}
+
+.login-links a:active {
+    color: #FFF200;
+}
+
+@media only screen and (max-width: 720px) {
+    .login-form {
+        min-width: 100%;
+        border-radius: 0px;
+    }
+    .login-logo {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}

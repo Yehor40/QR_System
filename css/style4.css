@@ -1,0 +1,259 @@
+header,
+main,
+footer {
+    padding-left: 240px;
+}
+
+body {
+    background: #3F67B1;
+}
+
+.logo {
+    margin-top: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+.logo_mobil {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.nav-logo {
+    background: #25326C;
+    height: 70px;
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.nav-logo a {
+    display: block;
+    color: #FF00AC;
+}
+
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+.topmenu > li > a {
+    position: relative;
+    padding: 10px 15px;
+    font-size: 1.3em;
+    line-height: 1;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 100%;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: #25326C;
+    border-radius: 6px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+}
+
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.submenu a {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: .3s linear;
+}
+
+.submenu a:hover {
+    background: #25326C;
+}
+
+#dash_dashboard a {
+    color: #FFF200;
+}
+
+#dash_users {
+    color: #FFF200;
+}
+
+#dash_users a {
+    color: #FFF200;
+}
+
+#dash_products a {
+    color: #FFF200;
+}
+
+#category_alco_drinks {
+    background: #3F67B1; 
+}
+
+#category_alco_drinks a {
+    color: #FFF200;
+}
+
+#category_drinks {
+    background: #3F67B1; 
+}
+
+#category_drinks a {
+    color: #FFF200;
+}
+
+#category_snack {
+    background: #3F67B1; 
+}
+
+#category_snack a {
+    color: #FFF200;
+}
+
+.z-depth-2 {
+    color: #FFF200;
+    background: #25326C;
+}
+
+p {
+    margin-top: -13%;
+    color: #FFF200;
+}
+
+h1 {
+    text-align: center;
+    color: #FFF200;
+    font-size: 40px;
+}
+
+.main {
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+table {
+    margin: auto;
+    border: 1px solid #ddd;
+	border-radius: 25px;
+	width:90%;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+    border: 1px solid #FF00AC;
+}
+
+th {
+    color: #FFF200;    
+}
+
+tr:nth-child(even) {
+    background-color: #e8f7f4;
+}
+
+.add {
+	background-color:#008500;
+    color: #FFFF;
+    width: 10%;
+    border-radius: 6px;
+	border:none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: #008500;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.add:active {
+    background-color: #008500! important;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.edit {
+	background-color: #FF7400;
+    color: #FFFF;
+    float: center;
+    width: 100%;
+    border-radius:6px;
+	border:none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.edit:hover {
+    background-color: #FF7400;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.edit:active {
+    background-color: #FF7400! important;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.delete {
+	background-color: #FF0000;
+    color: #FFFF;
+    float: left;
+    width: 100%;
+    border-radius:6px;
+	border:none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #FF0000;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.delete:active {
+    background-color: #FF0000! important;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.footer-main {
+    text-align: center;
+    height: 50px;
+    background: #25326C;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copyright .container,
+.footer-copyright .container a {
+    color: #FF00AC;
+}
+
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}

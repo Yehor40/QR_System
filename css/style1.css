@@ -1,0 +1,297 @@
+header,
+main,
+footer {
+    padding-left: 240px;
+}
+
+body {
+    background: #3F67B1;
+}
+
+.logo {
+    margin-top: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+.logo_mobil {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.nav-logo {
+    background: #25326C;
+    height: 70px;
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.nav-logo a {
+    display: block;
+    color: #FF00AC;
+}
+
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+.topmenu > li > a {
+    position: relative;
+    padding: 10px 15px;
+    font-size: 1.3em;
+    line-height: 1;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 100%;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: #25326C;
+    border-radius: 6px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+}
+
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.submenu a {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: .3s linear;
+}
+
+.submenu a:hover {
+    background: #25326C;
+}
+
+#dash_dashboard a {
+    color: #FFF200;
+}
+
+#dash_users {
+    color: #FFF200;
+}
+
+#dash_users a {
+    color: #FFF200;
+}
+
+#dash_products a {
+    color: #FFF200;
+}
+
+#category_alco_drinks {
+    background: #3F67B1; 
+}
+
+#category_alco_drinks a {
+    color: #FFF200;
+}
+
+#category_drinks {
+    background: #3F67B1; 
+}
+
+#category_drinks a {
+    color: #FFF200;
+}
+
+#category_snack {
+    background: #3F67B1; 
+}
+
+#category_snack a {
+    color: #FFF200;
+}
+
+.z-depth-2 {
+    color: #FFF200;
+    background: #25326C;
+}
+
+p {
+    margin-top: -13%;
+    color: #FFF200;
+}
+
+h1 {
+    text-align: center;
+    color: #FFF200;
+    font-size: 40px;
+}
+
+.products-container {
+    width: 100%;
+    min-height: 550px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-card {
+    margin: 10px;
+    width: 300px;
+    height: 560px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+}
+
+.shop-card .title {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #23211f;
+    margin-bottom: 5px;
+}
+
+.shop-card .desc {
+    font-size: 15px;
+    opacity: .8;
+    margin-bottom: 3px;
+    color: #23211f;
+}
+
+.product {
+    margin: 10px 0;
+}
+
+.product img {
+    width: 100%;
+}
+
+.cta {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    color: #28406b;
+    font-size: 22px;
+    font-weight: 900;
+    transition: color .3s ease-in-out;
+}
+
+.button {
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFFF;
+    padding: 12px 18px;
+    cursor: pointer;
+    transition: all 300ms;
+    line-height: .95;
+    border: none;
+    background: #269926;
+    outline: none;
+    border: 1px solid #008500;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background: #008500;
+    color: #FFFF;
+    border: none;
+}
+
+.edit {
+	background-color: #FF7400;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFFF;
+    padding: 12px 18px;
+    cursor: pointer;
+    transition: all 300ms;
+    line-height: .95;
+    border: none;
+    outline: none;
+    border: 1px solid #FF7400;
+    border-radius: 20px;
+}
+
+.edit:hover {
+    background-color: #FF7400;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.edit:active {
+    background-color: #FF7400! important;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.delete {
+	background-color: #FF0000;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFFF;
+    padding: 12px 18px;
+    cursor: pointer;
+    transition: all 300ms;
+    line-height: .95;
+    border: none;
+    outline: none;
+    border: 1px solid #FF0000;
+    border-radius: 20px;
+}
+
+.delete:hover {
+    background-color: #FF0000;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.delete:active {
+    background-color: #FF0000! important;
+    color: #FFFF;
+    border:none;
+    outline: none !important;
+}
+
+.footer-main {
+    text-align: center;
+    position: relative;
+    height: 50px;
+    background: #25326C;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copyright .container,
+.footer-copyright .container a {
+    color: #FF00AC;
+}
+
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}

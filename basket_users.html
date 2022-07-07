@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Košík</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style7.css" />
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/ico">
+</head>
+<body>
+    <ul id="slide-out" class="side-nav fixed z-depth-2">
+        <li class="center">
+            <div>
+                <div>
+                    <img class="logo" src="image/FCV-modre_pozadi-JPG.png"/>
+                    <p>FC Vysočina Jihlava</p>
+                </div>
+            </div>
+        </li>
+        <li id="dash_dashboard"><a href="shop.html"><b>Domovská stránka</b></a></li>
+        <ul class="collapsible" data-collapsible="accordion">
+            <li id="dash_categories">
+                <div id="dash_categories_header" class="collapsible-header waves-effect"><b>Kategorie</b></div>
+                <div id="dash_categories_body" class="collapsible-body">
+                    <ul>
+                        <li id="category_snack"><a href="#!">Občerstvení</a></li>
+                        <li id="category_drinks"><a href="#!">Nealkoholické nápoje</a></li>
+                        <li id="category_alco_drinks"><a href="#!">Alkoholické nápoje</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </ul>
+    <header>
+        <nav class="nav-logo">
+            <div class="nav-wrapper">
+                <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img class="logo_mobil" src="image/FCV-modre_pozadi-JPG.png" /></a>
+                <ul class="topmenu">
+                    <li class="nav-item"><a href="basket_users.html"><span class="bi bi-cart"></span> Košík (0)</a></li>
+                    <li><a class="down" href="#"><span class="bi bi-person"></span> My Account</a>
+                        <ul class="submenu">
+                            <li><a href=""><span class="bi bi-person-fill"></span> My Profile</a></li>
+                            <li><a href="#!"><span class="bi bi-box-arrow-left"></span> Odhlásit se</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Objednávky</h1>
+    <div class="basket">
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading" id="li">Produkt</li>
+          <li class="price" id="li">Cena</li>
+          <li class="quantity" id="li">Množství</li>
+          <li class="subtotal" id="li">Mezisoučet</li>
+        </ul>
+      </div>
+      
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>
+        <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://venota-com-media.r1-cz.storage.forpsicloud.cz/media/sites/116/2020/11/shottype1-540x540-34-150x150.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h2><span class="item-quantity">4</span> x Kofola</h2>
+          </div>
+          <div class="product-details">
+            <h4>Popis</h4>
+          </div>
+        </div>
+        <div class="price">30.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" id="quantity">
+        </div>
+        <div class="subtotal">120.00</div>
+        <div class="remove">
+          <button class="delete">Smazat <span class="bi bi-x-circle-fill"></span></button>
+        </div>
+      </div>      
+        
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span>Položky v košíků</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Mezisoučet</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">120.00</div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="" selected="selected">Výběr platby</option>
+             <option value="1">Karta</option>
+             <option value="2">Hotovost</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Celkem</div>
+          <div class="total-value final-value" id="basket-total">120.00</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="order">Objednat</button>
+        </div>
+      </div>
+    </aside>
+</main>
+<footer class="footer-main">
+    <div class="footer-copyright">
+        <div class="container">
+            <span><a href="https://www.fcvysocina.cz/zobraz.asp?t=copyright-informace-o-autorskych-pravech" target="_blank">© 2006-2022 FC Vysočina Jihlava </a> & <a href="https://esportsmedia.cz/" target="_blank">eSports.cz, s.r.o.</a></span>
+        </div>
+    </div>
+</footer>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Přidat nové zboži</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/ico">
+</head>
+<body>
+    <ul id="slide-out" class="side-nav fixed z-depth-2">
+        <li class="center">
+            <div>
+                <div>
+                    <img class="logo" src="image/FCV-modre_pozadi-JPG.png"/>
+                    <p>FC Vysočina Jihlava</p>
+                </div>
+            </div>
+        </li>
+        <li id="dash_dashboard"><a href="index.html"><b>Domovská stránka</b></a></li>
+        <li id="dash_users"><a href="list_users.html"><b>Uživateli</b></a></li>
+        <li id="dash_products"><a href="add.html"><b>Přidat nové zboži</b></a></li>
+        <ul class="collapsible" data-collapsible="accordion">
+            <li id="dash_categories">
+                <div id="dash_categories_header" class="collapsible-header waves-effect"><b>Kategorie</b></div>
+                <div id="dash_categories_body" class="collapsible-body">
+                    <ul>
+                        <li id="category_snack"><a href="#!">Občerstvení</a></li>
+                        <li id="category_drinks"><a href="#!">Nealkoholické nápoje</a></li>
+                        <li id="category_alco_drinks"><a href="#!">Alkoholické nápoje</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </ul>
+    <header>
+        <nav class="nav-logo">
+            <div class="nav-wrapper">
+                <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img class="logo_mobil" src="image/FCV-modre_pozadi-JPG.png" /></a>
+                <ul class="topmenu">
+                    <li class="nav-item"><a href="basket.html"><span class="bi bi-cart"></span> Košík (0)</a></li>
+                    <li><a class="down" href="#"><span class="bi bi-person"></span> My Account</a>
+                        <ul class="submenu">
+                            <li><a href=""><span class="bi bi-person-fill"></span> My Profile</a></li>
+                            <li><a href="#!"><span class="bi bi-box-arrow-left"></span> Odhlásit se</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section id="data">
+                <h1>Přidat nové zboži</h1>
+                <div>
+                    <div class="left-column"><label>Název zboži:</label></div>
+                    <div class="right-column"><input type="text" name="product" id="product" placeholder="Název zboži"/></div>
+                </div>
+                <div>
+                    <div class="left-column"><label>Cena:</label></div>
+                    <div class="right-column"><input type="number" name="cena" id="cena" placeholder="Cena" mode="numeric"/></div>
+                </div>
+                <div>
+                    <div class="left-column"><label>Obrázek:</label></div>
+                    <div class="right-column"><input type="file" name="picture" id="picture"/></div>
+                </div></br>
+            <div>
+                <div class="left-column"><label>Kategorie:</label></div>
+                <div class="right-column">
+                    <select class="category_products" name="category" required="required">
+                        <option value="">Kategorie</option>
+                        <option value="1">Občerstvení</option>
+                        <option value="2">Nealkoholické nápoje</option>
+                        <option value="3">Alkoholické nápoje</option>
+                    </select>
+                </div>
+            </div></br>
+        <div>
+            <div class="left-column"><label>Popis:</label></div>
+            <div class="right-column"><textarea  class="description" name="text" placeholder="Popis"></textarea></div>
+        </div>
+        <a href=""><button type="submit" class="add">Přidat zboži <span class="bi bi-bag-plus-fill"></span></button></a></br></br>
+    <a href=""><button type="submit" class="cancel">Cancel <span class="bi bi-x-circle-fill"></span></button></a>
+    </section>
+</div>
+</main>
+<footer class="footer-main">
+    <div class="footer-copyright">
+        <div class="container">
+            <span><a href="https://www.fcvysocina.cz/zobraz.asp?t=copyright-informace-o-autorskych-pravech" target="_blank">© 2006-2022 FC Vysočina Jihlava </a> & <a href="https://esportsmedia.cz/" target="_blank">eSports.cz, s.r.o.</a></span>
+        </div>
+    </div>
+</footer>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+<script src="js/script.js"></script>
+</body>
+</html>
